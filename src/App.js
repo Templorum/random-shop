@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import Header from "./modules/Header.jsx";
 import Nav from "./modules/Nav.jsx";
