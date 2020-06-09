@@ -9,9 +9,19 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className='container'> 2</div>
-            <div className='container'> 3</div>
-            <div className='container'> 4</div>
+            <div className='container'>
+                <div className='search-bar'>
+                    search bar
+                </div>
+            </div>
+            <div className='container'>
+                <div className='stub'> </div>
+            </div>
+            <div className='container'>
+                <div className='profile'>
+                    profile
+                </div>
+            </div>
         </header>
     )
 }
