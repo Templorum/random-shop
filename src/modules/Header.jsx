@@ -1,11 +1,12 @@
 import React from "react";
+import {ReactComponent as RandomAppLogo} from './RandomShopLogo4.svg';
 
 const Header = () => {
     return (
         <header className='header'>
             <div className='container'>
                 <div className='logo'>
-                    logo
+                    <RandomAppLogo className='logo-resize'/>
                 </div>
             </div>
 

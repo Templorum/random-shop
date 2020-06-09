@@ -46,6 +46,9 @@ $borderRadius: 1vw;
       @include def-param;
       @include container-shadow;
       border-right: 1px solid #e0e0e0;
+      .logo-resize{
+        height: 7.5vh;
+      }
     }
     .profile{
       @include def-param;
