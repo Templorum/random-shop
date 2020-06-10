@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className='footer'>
-            <div className='author-name-box'>
-                <div className='author-name-text'>
+        <footer className='Footer'>
+            <div className='Footer__AuthorNameBox'>
+                <div className='Footer__AuthorNameBox_TextStyle'>
                     Author: Vadim Pakhomov ©
                 </div>
             </div>

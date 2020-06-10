@@ -3,23 +3,22 @@ import {ReactComponent as RandomAppLogo} from './RandomShopLogo4.svg';
 
 const Header = () => {
     return (
-        <header className='header'>
-            <div className='container'>
-                <div className='logo'>
-                    <RandomAppLogo className='logo-resize'/>
+        <header className='Header'>
+            <div className='Header__Container'>
+                <div className='Header__Container__Logo'>
+                    <RandomAppLogo className='Header__Container__Logo_Logo-resize'/>
                 </div>
             </div>
-
-            <div className='container'>
-                <div className='search-bar'>
+            <div className='Header__Container'>
+                <div className='Header__Container__Search-bar'>
                     search bar
                 </div>
             </div>
-            <div className='container'>
-                <div className='stub'> </div>
+            <div className='Header__Container'>
+                <div className='Header__Container__Stub'> </div>
             </div>
-            <div className='container'>
-                <div className='profile'>
+            <div className='Header__Container'>
+                <div className='Header__Container__Profile'>
                     profile
                 </div>
             </div>

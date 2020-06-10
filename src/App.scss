@@ -27,7 +27,7 @@ $borderRadius: 1vw;
   grid-template-columns: 0.4fr 1fr 1fr;
 }
 
-.header{
+.Header{
   z-index: 2;
   grid-area: header;
   display: grid;
@@ -41,26 +41,26 @@ $borderRadius: 1vw;
     border-bottom: 1px solid #f3f3f3;
   }
 
-  .container{
-    .logo{
+  &__Container{
+    &__Logo{
       @include def-param;
       @include container-shadow;
       border-right: 1px solid #e0e0e0;
-      .logo-resize{
+      &_Logo-resize{
         height: 7.5vh;
       }
     }
-    .profile{
+    &__Profile{
       @include def-param;
       @include container-shadow;
       border-radius: 0 0 1vw 0;
     }
-    .search-bar{
+    &__Search-bar{
       @include def-param;
       @include container-shadow;
 
     }
-    .stub{
+    &__Stub{
       @include def-param;
       @include container-shadow;
 
@@ -68,7 +68,7 @@ $borderRadius: 1vw;
   }
 }
 
-.nav{
+.Nav{
   z-index: 3;
   grid-area: nav;
   background-color: #ffffff;
@@ -79,7 +79,7 @@ $borderRadius: 1vw;
   @include container-shadow;
 }
 
-.main{
+.Main{
   grid-area: main;
   background-color: #d7d7d7;
 
@@ -90,25 +90,44 @@ $borderRadius: 1vw;
   grid-gap: 0.5vw;
   height: 1fr;
   padding: 3vw;
-  .container{
+  &__Container{
     background-color: #ffffff;
     border-radius: $borderRadius;
     @include container-shadow;
+    &__Header{
+      text-align: center;
+    }
+    &__Separator{
+      height: 3vh;
+      width: 100%;
+      background: rgb(131,58,180);
+      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    }
+    &__Content{
+      display: flex;
+      &_Image{
+        width: 40%;
+      }
+      &_Text{
+        font-size: 1vw;
+        width: 60%;
+      }
+    }
   }
 }
 
-.footer{
+.Footer{
   grid-area: footer;
   background-color: #d7d7d7;
 
   display: flex;
   justify-content: center;
-  .author-name-box{
+  &__AuthorNameBox{
     display: flex;
     align-items: flex-end;
     position: relative;
     padding: 0.2%;
-    .author-name-text{
+    &_TextStyle{
       color: #5c5c5c;
       font-size: 0.8vw;
     }
