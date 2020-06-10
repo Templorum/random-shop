@@ -48,6 +48,7 @@ $borderRadius: 1vw;
       border-right: 1px solid #e0e0e0;
       &_Logo-resize{
         height: 7.5vh;
+        width: 10vw;
       }
     }
     &__Profile{
@@ -105,10 +106,12 @@ $borderRadius: 1vw;
     }
     &__Content{
       display: flex;
+      padding: 1vh;
       &_Image{
         width: 40%;
       }
       &_Text{
+        padding-left: 2vh;
         font-size: 1vw;
         width: 60%;
       }
