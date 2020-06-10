@@ -11,7 +11,6 @@ const Header = () => {
             </div>
             <div className='Header__Container'>
                 <div className='Header__Container__Search-bar'>
-                    search bar
                 </div>
             </div>
             <div className='Header__Container'>

@@ -11,6 +11,10 @@
 $fontSize: 2vw;
 $borderRadius: 1vw;
 
+*{
+  box-sizing: border-box;
+}
+
 .appWrapper {
   font-family: Inconsolata;
   display: grid;
@@ -28,7 +32,7 @@ $borderRadius: 1vw;
 }
 
 .Header{
-  z-index: 2;
+  z-index: 3;
   grid-area: header;
   display: grid;
 
@@ -81,6 +85,7 @@ $borderRadius: 1vw;
 }
 
 .Main{
+  z-index: 2;
   grid-area: main;
   background-color: #d7d7d7;
 
@@ -88,9 +93,10 @@ $borderRadius: 1vw;
 
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 0.5vw;
+  grid-gap: 1vw;
   height: 1fr;
-  padding: 3vw;
+  padding: 3vw 3vw 0vw 3vw;
+
   &__Container{
     background-color: #ffffff;
     border-radius: $borderRadius;
@@ -102,7 +108,8 @@ $borderRadius: 1vw;
       height: 3vh;
       width: 100%;
       background: rgb(131,58,180);
-      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+      background: linear-gradient(90deg, rgba(131,58,180,1) 0%,
+                  rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     }
     &__Content{
       display: flex;
@@ -120,16 +127,15 @@ $borderRadius: 1vw;
 }
 
 .Footer{
+  z-index: 1;
   grid-area: footer;
   background-color: #d7d7d7;
+  height: 3vw;
 
   display: flex;
   justify-content: center;
+  align-items: end;
   &__AuthorNameBox{
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    padding: 0.2%;
     &_TextStyle{
       color: #5c5c5c;
       font-size: 0.8vw;
