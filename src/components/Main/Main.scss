@@ -1,0 +1,43 @@
+@import "src/components/mix-in", "src/components/var";
+
+.Main{
+  z-index: 2;
+  grid-area: main;
+  background-color: $mainBackgroundColor;
+
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vw;
+  height: 1fr;
+  padding: 3vw 3vw 0 3vw;
+
+  &__Container{
+    background-color: $mainWhiteColor;
+    border-radius: $borderRadius;
+    @include container-shadow;
+    &__Header{
+      text-align: center;
+    }
+    &__Separator{
+      height: 3vh;
+      width: 100%;
+      background: rgb(131,58,180);
+      background: linear-gradient(90deg, rgba(131,58,180,1) 0%,
+              rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    }
+    &__Content{
+      display: flex;
+      padding: 1vh;
+      &_Image{
+        width: 40%;
+      }
+      &_Text{
+        padding-left: 2vh;
+        font-size: 1vw;
+        width: 60%;
+      }
+    }
+  }
+}

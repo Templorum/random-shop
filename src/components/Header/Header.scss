@@ -1,0 +1,43 @@
+@import "src/components/mix-in", "../var";
+
+.Header{
+  z-index: 3;
+  grid-area: header;
+  display: grid;
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.4fr 1fr 0.5fr 0.5fr;
+
+  @mixin def-param {
+    height: 100%;
+    background-color: $mainWhiteColor;
+    border-bottom: 1px solid #f3f3f3;
+  }
+
+  &__Container{
+    &__Logo{
+      @include def-param;
+      @include container-shadow;
+      border-right: 1px solid #e0e0e0;
+      &_Logo-resize{
+        height: 7.5vh;
+        width: 10vw;
+      }
+    }
+    &__Profile{
+      @include def-param;
+      @include container-shadow;
+      border-radius: 0 0 1vw 0;
+    }
+    &__Search-bar{
+      @include def-param;
+      @include container-shadow;
+
+    }
+    &__Stub{
+      @include def-param;
+      @include container-shadow;
+
+    }
+  }
+}

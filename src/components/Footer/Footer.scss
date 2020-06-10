@@ -1,0 +1,23 @@
+@import "../mix-in", "../var";
+
+.Footer
+  {
+    z-index: 1;
+
+    grid-area:footer;
+    background-color: $mainBackgroundColor;
+    height: 3vw;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:end;
+
+    &__AuthorNameBox{
+      &_TextStyle{
+        color: #5c5c5c;
+        font-size: 0.8vw;
+      }
+    }
+  }

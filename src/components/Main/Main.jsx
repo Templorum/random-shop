@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../img/macBook.jpg";
+import image from "./img/macBook.jpg";
 
 const Main = () => {
     return (
@@ -18,7 +18,7 @@ const MainContainer = () => {
             <div className='Main__Container__Header'>Название</div>
             <div className='Main__Container__Separator'> </div>
             <div className='Main__Container__Content'>
-                <img className='Main__Container__Content_Image' src={image} alt="image not found"/>
+                <img className='Main__Container__Content_Image' src={image} alt="not found"/>
                 <div className='Main__Container__Content_Text'>
                     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor ducimus maiores nesciunt
                         nisi optio perspiciatis quaerat vitae. Consectetur, cum cumque earum facere fugit illum
